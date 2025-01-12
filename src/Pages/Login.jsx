@@ -14,7 +14,7 @@ const Login = () => {
     try{
         e.preventDefault();
         const payload ={email,password}
-        const res= await axios.post("https://backend-authentication-h0o5.onrender.com/api/auth/login",payload)
+        const res= await axios.post("http://localhost:5000/api/auth/login",payload)
         toast.success(res.data.message)
     }
     catch(error)
