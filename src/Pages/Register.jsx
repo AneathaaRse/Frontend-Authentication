@@ -18,7 +18,7 @@ const Register = () => {
       e.preventDefault();
       const  payload  = { name, email, password };
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://backend-authentication-2.onrender.com/api/auth/register",
         payload
       );
       toast.success(res.data.message);
